@@ -378,7 +378,7 @@ def create_pdf(data):
     pdf.cell(95, 5, "CLASS TEACHER'S SIGNATURE", 0, 0, 'C')
     pdf.cell(95, 5, "HEADMASTER'S SIGNATURE", 0, 1, 'C')
 
-    return pdf.output(dest='S').encode('latin-1')
+    return pdf.output(dest='S')
 
 # --- HEADER ---
 col1, col2 = st.columns([3, 1])
